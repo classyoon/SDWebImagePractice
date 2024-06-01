@@ -12,6 +12,8 @@
 		4C05E49F2C0962B200B9F010 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C05E49E2C0962B200B9F010 /* Item.swift */; };
 		4C05E4A12C0962B300B9F010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C05E4A02C0962B300B9F010 /* Assets.xcassets */; };
 		4C05E4A42C0962B300B9F010 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C05E4A32C0962B300B9F010 /* Preview Assets.xcassets */; };
+		4C05E4AB2C0962E000B9F010 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C05E4AA2C0962E000B9F010 /* ProfileView.swift */; };
+		4C05E4AE2C09670900B9F010 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4C05E4AD2C09670900B9F010 /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,7 @@
 		4C05E49E2C0962B200B9F010 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		4C05E4A02C0962B300B9F010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C05E4A32C0962B300B9F010 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4C05E4AA2C0962E000B9F010 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C05E4AE2C09670900B9F010 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +59,7 @@
 			children = (
 				4C05E49A2C0962B200B9F010 /* SDWebImagePracticeApp.swift */,
 				4C05E49C2C0962B200B9F010 /* ContentView.swift */,
+				4C05E4AA2C0962E000B9F010 /* ProfileView.swift */,
 				4C05E49E2C0962B200B9F010 /* Item.swift */,
 				4C05E4A02C0962B300B9F010 /* Assets.xcassets */,
 				4C05E4A22C0962B300B9F010 /* Preview Content */,
@@ -86,6 +91,9 @@
 			dependencies = (
 			);
 			name = SDWebImagePractice;
+			packageProductDependencies = (
+				4C05E4AD2C09670900B9F010 /* SDWebImageSwiftUI */,
+			);
 			productName = SDWebImagePractice;
 			productReference = 4C05E4972C0962B200B9F010 /* SDWebImagePractice.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 4C05E48E2C0962B200B9F010;
+			packageReferences = (
+				4C05E4AC2C09670900B9F010 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 4C05E4982C0962B200B9F010 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C05E4AB2C0962E000B9F010 /* ProfileView.swift in Sources */,
 				4C05E49D2C0962B200B9F010 /* ContentView.swift in Sources */,
 				4C05E49F2C0962B200B9F010 /* Item.swift in Sources */,
 				4C05E49B2C0962B200B9F010 /* SDWebImagePracticeApp.swift in Sources */,
@@ -348,6 +360,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4C05E4AC2C09670900B9F010 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4C05E4AD2C09670900B9F010 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C05E4AC2C09670900B9F010 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4C05E48F2C0962B200B9F010 /* Project object */;
 }
